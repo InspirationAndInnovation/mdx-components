@@ -11,3 +11,5 @@ export const components = {
   YouTube,
   XmindView,
 };
+
+export default components;

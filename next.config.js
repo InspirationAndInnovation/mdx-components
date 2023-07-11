@@ -1,8 +1,9 @@
-const withNextra = require('nextra')({
-  theme: 'nextra-theme-docs',
-  themeConfig: './theme.config.jsx',
+const withNextra = require("nextra")({
+  theme: "nextra-theme-docs",
+  themeConfig: "./theme.config.jsx",
+  defaultShowCopyCode: true,
 });
 
 module.exports = withNextra({
-  transpilePackages: ['react-tweet', 'xmind-embed-viewer'],
+  transpilePackages: ["react-tweet", "xmind-embed-viewer"],
 });

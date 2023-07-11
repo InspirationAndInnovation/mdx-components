@@ -2,8 +2,28 @@
 
 ### Demo
 
+#### 单张图片
+
 ```tsx
-<Image src='https://raw.githubusercontent.com/smile618/imgs/main/static202305152229640.png' />
+<Image src="https://raw.githubusercontent.com/smile618/imgs/main/static202305152229640.png" />
 ```
 
-<Image src='https://raw.githubusercontent.com/smile618/imgs/main/static202305152229640.png' />
+<Image src="https://raw.githubusercontent.com/smile618/imgs/main/static202305152229640.png" />
+
+#### 多张图片
+
+```tsx
+<Image
+  list={[
+    "https://raw.githubusercontent.com/smile618/imgs/main/static202305152229640.png",
+    "https://raw.githubusercontent.com/smile618/imgs/main/static202306021015899.png",
+  ]}
+/>
+```
+
+<Image
+  list={[
+    "https://raw.githubusercontent.com/smile618/imgs/main/static202305152229640.png",
+    "https://raw.githubusercontent.com/smile618/imgs/main/static202306021015899.png",
+  ]}
+/>

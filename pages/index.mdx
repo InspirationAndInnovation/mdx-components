@@ -25,8 +25,9 @@ npx install-peerdeps mdx-elements
 
 ### 使用方法
 
-1. 在[Nexrta](https://wiki.dev-hub.top/docs/Website/Nextra)中使用
-   修改`theme.config.jsx`文件。
+#### 1. 在[Nexrta](https://wiki.dev-hub.top/docs/Website/Nextra)中使用
+
+修改`theme.config.jsx`文件。
 
 ```js file=theme.config.jsx highlight=7
 import { components } from "mdx-elements";
@@ -36,6 +37,22 @@ export default {
     link: "https://github.com/try-to-fly/mdx-components",
   },
   components,
+};
+```
+
+#### 2. 在[Docusaurus](https://wiki.dev-hub.top/docs/Website/Docusaurus)中使用
+
+修改`src/theme/MDXComponents.js`文件
+
+```js file=src/theme/MDXComponents.js
+import React from "react";
+// Import the original mapper
+import MDXComponents from "@theme-original/MDXComponents";
+import { components } from "mdx-elements";
+
+export default {
+  ...MDXComponents,
+  ...components,
 };
 ```
 

@@ -36,3 +36,7 @@ next-env.d.ts
 
 node_modules
 dist
+
+# lerna
+lerna-debug.log
+lerna-error.log

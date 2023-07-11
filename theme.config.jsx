@@ -1,4 +1,5 @@
-import {components} from 'mdx-elements';
+// 导入源代码，避免重复编译
+import {components} from 'mdx-elements/src';
 
 
 // eslint-disable-next-line import/no-anonymous-default-export

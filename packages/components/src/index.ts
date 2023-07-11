@@ -12,4 +12,4 @@ export const components = {
   XmindView,
 };
 
-export default components;
+export { Image, Tweet, Badge, YouTube, XmindView };
